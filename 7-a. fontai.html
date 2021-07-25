@@ -22,6 +22,7 @@
       .right {
          float: left;
          width: 50%;
+
       }
 
       /* cia formatuos tik kairiojo stulpelio h1 elementus, nes nenorim desines puses formatuoti */
@@ -29,6 +30,16 @@
       .left,
       .left pre {
          font-family: 'Special Elite', cursive;
+      }
+
+      .left pre {
+         font-size: 10px;
+         line-height: 1.3;
+         color: red;
+         border: 10px outset green;
+         border-radius: 20px;
+         background-color: lightgrey;
+         padding: 15px;
       }
 
       .left h1,
@@ -80,39 +91,65 @@
          line-height: 1.5;
          font-weight: 400;
       }
+
+      .left blockquote {
+
+         font-size: 20px;
+         line-height: 1.2;
+         font-weight: 300;
+         border-bottom: 3px solid chartreuse;
+         border-left: 4px solid chartreuse;
+         /* paddint left atstume citatos texta nuo remo linijos per 7px */
+         padding-left: 7px;
+      }
+
+      /* padding reiskia is visu elemento pusiu - paraste */
+      .left-1 {
+         padding: 10px;
+         padding-left: 20px;
+      }
+
+      /* isorines parastes issiskaiciuoja i elemento stori, todel del margin: 1 px - struktura is 2-u stulpeliu sugriuna i 1-a stulpeli, todel reikalingos padding parastes, bet padding taip pat plecia elementa, todel reikalinga papildoma dezute - <div >, siuo atveju: <div class left-1> */
    </style>
 
 </head>
 
+
+<!-- margin - isorines elemento parastes -->
+<!-- padding - vidines elemento parastes -->
+
 <body>
    <div class="container">
       <div class="left">
-         <h1>kartojimas</h1>
-         <h2>kartojimas</h2>
-         <h3>kartojimas</h3>
-         <h4>kartojimas</h4>
-         <h5>kartojimas</h5>
-         <h6>kartojimas</h6>
-         <p> cia 7-a</p>
-         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis maxime assumenda distinctio ut modi
-            similique commodi beatae accusamus cum tempora, officia ipsa repellendus. Ipsam voluptate doloremque velit
-            optio laudantium ad! </p>
-         <blockquote> tai citata</blockquote>
-         <!-- spec simboliai vadinami escapecode. Arba html special charters. tai visokiausiu simboliu kodai atvaizdavimui html. vienas is saitu: https://www.rapidtables.com/web/html/html-codes.html-->
-         <!-- PVZ   -->
-         <p> &lt;h1&gt; </p>
-         <p> &lt;h1&gt; septinta paskaita &lt;/h1&gt;</p>
-         <p>&copy;</p>
-         .css {
-         font-size: 18px;
-         }
-         <!-- pre tagas islaiko tik teksto simboliu isdestyma bei vieta plokstumoje -->
-         <pre>
+         <div class="left-1">
+            <h1>kartojimas</h1>
+            <h2>kartojimas</h2>
+            <h3>kartojimas</h3>
+            <h4>kartojimas</h4>
+            <h5>kartojimas</h5>
+            <h6>kartojimas</h6>
+            <p> cia 7-a</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis maxime assumenda distinctio ut modi
+               similique commodi beatae accusamus cum tempora, officia ipsa repellendus. Ipsam voluptate doloremque
+               velit
+               optio laudantium ad! </p>
+            <blockquote> tai citata</blockquote>
+            <!-- spec simboliai vadinami escapecode. Arba html special charters. tai visokiausiu simboliu kodai atvaizdavimui html. vienas is saitu: https://www.rapidtables.com/web/html/html-codes.html-->
+            <!-- PVZ   -->
+            <p> &lt;h1&gt; </p>
+            <p> &lt;h1&gt; septinta paskaita &lt;/h1&gt;</p>
+            <p>&copy;</p>
+            .css {
+            font-size: 18px;
+            }
+            <!-- pre tagas islaiko tik teksto simboliu isdestyma bei vieta plokstumoje -->
+            <pre>
             &lt;h1&gt; septinta paskaita &lt;/h1&gt;
                .css {
              font-size: 18px;
             }
-   </pre>
+            </pre>
+         </div>
       </div>
       <div class="right">
          <h1>kartojimas</h1>
